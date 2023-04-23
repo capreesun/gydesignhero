@@ -1,0 +1,587 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom css here */
+html {
+  font-family: acumin-variable, sans-serif;
+  font-style: normal;
+}
+
+html.home {
+  overflow: hidden;
+}
+
+html* {
+  box-sizing: border-box;
+}
+
+footer,
+div.footer {
+  position: fixed;
+  bottom: 2%;
+  width: 100%;
+}
+
+content-wrap {
+  padding-bottom: 30rem; /* Footer height */
+}
+
+main {
+  background: #ffffff;
+  margin: 1em;
+  padding: 1em;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.topnav h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+a h5 {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-size: 0.6em;
+  line-height: 0.7em;
+}
+
+a h6 {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 300;
+  font-size: 0.5em;
+}
+
+a h6,
+a h5 {
+  font-style: normal;
+  color: black;
+}
+
+p {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.15rem;
+}
+
+.vidbackground {
+  position: fixed;
+  display: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index:100;
+}
+
+.showreelnav {
+  z-index: 50;
+}
+
+marquee {
+  width: absolute;
+  position: fixed;
+  bottom: 35%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+marquee.timeline {
+  bottom: 45%;
+}
+
+marquee div {
+  display: inline-block;
+}
+
+marquee div {
+  vertical-align: middle;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5rem;
+  transition: 0.5s ease-in-out transform;
+}
+
+marquee div a h6,
+marquee div a h5 {
+  opacity: 0;
+}
+
+marquee div:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out transform;
+  z-index: 100;
+}
+
+marquee div:hover > a h6 {
+  animation: fadein 0.5s ease-out;
+  opacity: 100%;
+}
+
+marquee div:hover > a h5 {
+  animation: fadein 0.5s ease-out;
+  opacity: 100%;
+}
+
+footer ul {
+  display: flex;
+}
+
+.right-side {
+  display: absolute;
+  position: fixed;
+  align-content: right;
+  bottom: 2%;
+  right:1%;
+  width: 29%;
+}
+
+nav {
+  width: 60%;
+}
+
+.top-right {
+  position: fixed;
+  display: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+nav a,
+div.gallerynav,
+div.topnav {
+  padding: 0;
+  padding-left: 0;
+  text-align: left;
+  text-decoration: none;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  width: 2.5rem;
+}
+
+div.hamburger div.mobilemenu {
+  display: none;
+}
+
+div.hamburger div.mobilemenu ul ul {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  width: 10rem;
+  justify-content: end;
+}
+
+a:hover {
+  font-weight: 200;
+  font-style: italic;
+}
+
+nav ul ul {
+  margin-top: 80%;
+  display: absolute;
+  flex-wrap: wrap;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul li ul {
+  display: none;
+  padding-left: 1rem;
+}
+
+nav ul ul li:hover ul {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+}
+
+.active {
+  font-weight: 200;
+  font-style: italic;
+}
+
+div.gallerynav,
+div.topnav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 0.6em;
+  left: 0.6em;
+}
+
+div.gallerynav {
+  bottom: 45%;
+  z-index: 100;
+}
+
+div.topnav {
+  top: 0.6em;
+  z-index: 150;
+}
+
+div.gallery {
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left:1.5%;
+  width: 95%;
+  height: auto;
+  justify-content: center;
+}
+.container #video {
+  border-radius: 20px;
+  width: 90%;
+  height: auto;
+}
+
+.container .controls {
+  z-index:100;
+  width: 100%;
+  display: flex;
+  flex-wrap: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.container .controls .play{
+  position: absolute;
+  left:47.5%;
+  bottom: 50%;
+  width:64px;
+  height:64px;
+}
+
+.container .controls .full{
+  position: absolute;
+  bottom:1%;
+  right:6%;
+  width:42px;
+  height:42px;
+}
+
+.container:hover .controls {
+  opacity: 0.7;
+}
+
+.container .controls button {
+  background: black;
+  border-radius:10px;
+  color: white;
+  border: none;
+}
+
+.container .controls .timeline .bar{
+  background: rgb(1, 1, 65);
+  height: 4px;
+  flex: 1;
+}
+.container .controls .timeline .bar .inner{
+  background: white;
+  width: 0%;
+  height: 100%;
+}
+
+.fa {
+  font-size: 20px !important;
+}
+
+@media screen and (max-width: 1000px) {
+  h1,
+  .topnav h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-side {
+    margin-left: 45%;
+    display: absolute;
+    position: fixed;
+    align-content: right;
+    bottom: 2%;
+    width: 45%;
+  }
+
+  div.gallery {
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 80%;
+  }
+
+  nav {
+    width: 40%;
+  }
+
+  nav a {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    display: none;
+  }
+  .right-side {
+    margin-left: 0%;
+    display: absolute;
+    position: relative;
+    align-content: right;
+    bottom: 2%;
+    width: 90%;
+  }
+
+  .hamburger {
+    display: block;
+    position: flex;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  div.hamburger:hover > div.mobilemenu {
+    display: block;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 0.92rem;
+  }
+
+  div.gallerynav {
+    bottom: 2%;
+    z-index: 100;
+  }
+
+  div.gallery {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    width: 100%;
+  }
+
+  marquee {
+    width: absolute;
+    position: fixed;
+    bottom: 30%;
+  }
+
+  marquee.timeline {
+    bottom: 45%;
+  }
+}
+
+.fade {
+  opacity: 100;
+  animation: fadeout 1s normal forwards;
+  animation-delay: 0.5s;
+}
+
+.fade:hover {
+  animation: none;
+  opacity: 100;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* 
+.fade:hover {
+  opacity: 100;
+} */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

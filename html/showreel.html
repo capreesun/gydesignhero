@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--- the doctype declaration tells the file reader that we're using html-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!---declares what kinds of characters are supportive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---makes site responsive-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---makes site work better with microsoft browsers-->
+    <title>Showreel - Guang Yu</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="../https://use.typekit.net/bdi8gae.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <main>
+      <header>
+          <div class="topnav">
+              <h1 class="title">
+              <a href="../index.html" class="fade">
+                Guang Yu
+              </a>
+            <h1 class="fade">
+              Showreel
+            </h1>
+            <div class="hamburger fade">
+                <img src="../images/ham.svg" alt="hamburger icon" />
+                <div class="mobilemenu">
+                    <ul>
+                        <ul>
+                            <li>
+                                <a href="../index.html">
+                                  Home
+                                </a>
+                              </li>
+                          <li>
+                            <a href="about.html">
+                              About
+                            </a>
+                          </li>
+                          <li>
+                            <a href="timeline.html">
+                              Timeline
+                            </a>
+                          </li>
+                          <li>
+                            <a href="showreel.html" class="active">
+                              Showreel
+                            </a>
+                          </li>
+                          <li>
+                              <a href="credits.html">
+                                Credits
+                              </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class= "controls">
+            <button class="play" onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+            <button class="full" onclick="fullScreen(event)"><i class="fa fa-expand"></i></button>
+        </div>
+            <video onclick="play(event)" src="../video/kiosk.mp4" id="video">
+            </video>
+        </div>        
+      <script src="../script.js"></script>
+        <footer>
+            <nav>
+                <ul>
+                  <li>
+                    <ul class="fade">
+                        <li>
+                            <a href="../index.html">
+                              Home
+                            </a>
+                          </li>
+                      <li >
+                        <a href="about.html">
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a href="timeline.html">
+                          Timeline
+                        </a>
+                      </li>
+                      <li>
+                        <a href="showreel.html" class="active">
+                          Showreel
+                        </a>
+                      </li>
+                      <li>
+                          <a href="credits.html">
+                            Credits
+                          </a>
+                        </li>
+                      </li>
+                    </ul>
+              </nav>
+            </footer>
+    </main>
+  </body>
+</html>
+
+
+<!--different classes for video; one that displays full width -->
