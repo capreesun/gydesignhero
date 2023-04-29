@@ -188,6 +188,9 @@ h1 {
 
 .topnav h1 {
   font-size: 3rem;
+}
+
+.title {
   letter-spacing: -2px;
 }
 
