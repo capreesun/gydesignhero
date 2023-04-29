@@ -146,11 +146,12 @@ footer,
 div.footer {
   position: fixed;
   bottom: 2%;
+  height:10%;
   width: 100%;
 }
 
 content-wrap {
-  padding-bottom: 30rem; /* Footer height */
+  padding-bottom: 50px; /* Footer height */
 }
 
 main {
@@ -186,33 +187,43 @@ h1 {
 }
 
 .topnav h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
+  letter-spacing: -2px;
 }
 
 h2 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 200;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+}
+
+h3{
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
   line-height: 2.5rem;
 }
 
 a h5 {
   font-family: neue-haas-grotesk-display, sans-serif;
+  font-style: normal;
   font-weight: 600;
-  font-size: 0.6em;
-  line-height: 0.7em;
+  font-size: 0.8em;
+  line-height: 1.2em;
 }
 
 a h6 {
-  font-family: "acumin-pro", sans-serif;
-  font-weight: 300;
-  font-size: 0.5em;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 0.7em;
+  line-height: 1.2em;
 }
 
 a h6,
 a h5 {
-  font-style: normal;
   color: black;
 }
 
@@ -224,14 +235,8 @@ p {
   line-height: 1.15rem;
 }
 
-.vidbackground {
-  position: fixed;
-  display: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index:100;
+a p:hover{
+  font-style: italic;
 }
 
 .showreelnav {
@@ -297,7 +302,7 @@ footer ul {
   width: 29%;
 }
 
-nav {
+nav.home {
   width: 60%;
 }
 
@@ -310,7 +315,7 @@ nav {
 
 nav a,
 div.gallerynav,
-div.topnav {
+div.topnav,div.hometopnav {
   padding: 0;
   padding-left: 0;
   text-align: left;
@@ -345,7 +350,8 @@ a:hover {
 }
 
 nav ul ul {
-  margin-top: 80%;
+  position: fixed;
+  bottom:10px;
   display: absolute;
   flex-wrap: wrap;
 }
@@ -372,7 +378,7 @@ nav ul ul li:hover ul {
 }
 
 div.gallerynav,
-div.topnav {
+div.topnav,div.hometopnav {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -385,82 +391,43 @@ div.gallerynav {
   z-index: 100;
 }
 
-div.topnav {
-  top: 0.6em;
+div.topnav,div.hometopnav {
+  position: fixed;
+  top: 2%;
   z-index: 150;
 }
 
 div.gallery {
   margin: auto;
-  margin-top: 10%;
+  margin-top:5%;
   margin-bottom: 10%;
   width: 50%;
 }
 
+div.credits {
+  position: fixed;
+  left:38%;
+  margin-top:5%;
+  margin-bottom: 10%;
+  width: 24%;
+}
+
 .container {
+  z-index:0;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  left:1.5%;
+  margin: auto;
   width: 95%;
   height: auto;
-  justify-content: center;
 }
 .container #video {
+  position: fixed;
+  top: 11vh;
+  left:13vw;
   border-radius: 20px;
-  width: 90%;
+  width: 74vw;
   height: auto;
-}
-
-.container .controls {
-  z-index:100;
-  width: 100%;
-  display: flex;
-  flex-wrap: center;
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-
-.container .controls .play{
-  position: absolute;
-  left:47.5%;
-  bottom: 50%;
-  width:64px;
-  height:64px;
-}
-
-.container .controls .full{
-  position: absolute;
-  bottom:1%;
-  right:6%;
-  width:42px;
-  height:42px;
-}
-
-.container:hover .controls {
-  opacity: 0.7;
-}
-
-.container .controls button {
-  background: black;
-  border-radius:10px;
-  color: white;
-  border: none;
-}
-
-.container .controls .timeline .bar{
-  background: rgb(1, 1, 65);
-  height: 4px;
-  flex: 1;
-}
-.container .controls .timeline .bar .inner{
-  background: white;
-  width: 0%;
-  height: 100%;
-}
-
-.fa {
-  font-size: 20px !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -536,7 +503,7 @@ div.gallery {
 
   div.gallery {
     margin: auto;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 15%;
     width: 100%;
   }
@@ -556,11 +523,6 @@ div.gallery {
   opacity: 100;
   animation: fadeout 1s normal forwards;
   animation-delay: 0.5s;
-}
-
-.fade:hover {
-  animation: none;
-  opacity: 100;
 }
 
 @keyframes fadeout {

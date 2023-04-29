@@ -22,13 +22,13 @@
       <header>
           <div class="topnav">
               <h1 class="title">
-              <a href="../index.html" class="fade">
+              <a href="../index.html">
                 Guang Yu
               </a>
-            <h1 class="fade">
+            <h1>
               Showreel
             </h1>
-            <div class="hamburger fade">
+            <div class="hamburger">
                 <img src="../images/ham.svg" alt="hamburger icon" />
                 <div class="mobilemenu">
                     <ul>
@@ -63,20 +63,15 @@
             </div>
           </div>
         </header>
-        <div class="container">
-          <div class= "controls">
-            <button class="play" onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
-            <button class="full" onclick="fullScreen(event)"><i class="fa fa-expand"></i></button>
-        </div>
-            <video onclick="play(event)" src="../video/kiosk.mp4" id="video">
-            </video>
-        </div>        
-      <script src="../script.js"></script>
-        <footer>
+      <div class="container">
+        <video controls loop src="../video/video.mp4" id="video">
+        </video>
+      </div>
+      <footer>
             <nav>
                 <ul>
                   <li>
-                    <ul class="fade">
+                    <ul>
                         <li>
                             <a href="../index.html">
                               Home
@@ -105,7 +100,7 @@
                       </li>
                     </ul>
               </nav>
-            </footer>
+      </footer>
     </main>
   </body>
 </html>
