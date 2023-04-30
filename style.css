@@ -134,9 +134,9 @@ html {
   font-style: normal;
 }
 
-html.home {
+/* html.home {
   overflow: hidden;
-}
+} */
 
 html* {
   box-sizing: border-box;
@@ -184,14 +184,6 @@ h1 {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 600;
   font-size: 3rem;
-}
-
-.topnav h1 {
-  font-size: 3rem;
-}
-
-.title {
-  letter-spacing: -2px;
 }
 
 h2 {
@@ -329,6 +321,12 @@ div.topnav,div.hometopnav {
   color: black;
 }
 
+.hometitle{
+  font-size:3.1rem;
+  letter-spacing:1.7px;
+}
+
+
 .hamburger {
   display: none;
   width: 2.5rem;
@@ -381,7 +379,7 @@ nav ul ul li:hover ul {
 }
 
 div.gallerynav,
-div.topnav,div.hometopnav {
+div.topnav, div.hometopnav {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -394,7 +392,7 @@ div.gallerynav {
   z-index: 100;
 }
 
-div.topnav,div.hometopnav {
+div.topnav, div.hometopnav {
   position: fixed;
   top: 2%;
   z-index: 150;

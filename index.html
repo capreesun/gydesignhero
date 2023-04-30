@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--- the doctype declaration tells the file reader that we're using html-->
-<html lang="en" class="home">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <!---declares what kinds of characters are supportive-->
@@ -20,48 +20,49 @@
     <main>
       <header>
         <div class="hometopnav">
-          <h1>
-            Guang Yu
+          <h1 class="hometitle">
+            <a href="index.html">
+              Guang Yu
+            </a>
           </h1>
           <h1>
             Home
           </h1>
-          <div class="hamburger">
-            <img src="images/ham.svg" alt="hamburger icon" />
-            <div class="mobilemenu">
-                <ul>
-                    <!---Nav will go here--->
+            <div class="hamburger">
+                <img src="images/ham.svg" alt="hamburger icon" />
+                <div class="mobilemenu">
                     <ul>
-                        <li>
-                            <a class="active">
-                              Home
+                        <ul>
+                          <li>
+                              <a href="index.html">
+                                Home
+                              </a>
+                            </li>
+                          <li>
+                            <a href="html/about.html">
+                              About
                             </a>
                           </li>
-                      <li>
-                        <a href="html/about.html">
-                          About
-                        </a>
-                      </li>
-                      <li>
-                        <a href="html/timeline.html">
-                          Timeline
-                        </a>
-                      </li>
-                      <li>
-                        <a href="html/showreel.html">
-                          Showreel
-                        </a>
-                      </li>
-                      <li>
-                          <a href="html/credits.html">
-                            Credits
-                          </a>
-                        </li>
-                    </ul>
+                          <li>
+                            <a href="html/timeline.html">
+                              Timeline
+                            </a>
+                          </li>
+                          <li>
+                            <a href="html/showreel.html">
+                              Showreel
+                            </a>
+                          </li>
+                          <li>
+                              <a href="html/credits.html">
+                                Credits
+                              </a>
+                            </li>
+                        </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </header>
+    </header>
       <marquee behavior="scroll" direction="left" scrollamount="7" onmouseover="this.stop();" onmouseout="this.start();">
         <div> <!--boy-->
           <a href="html/gallery/secure.html">
