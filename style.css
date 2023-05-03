@@ -432,6 +432,14 @@ div.credits {
 }
 
 @media screen and (max-width: 1000px) {
+  div.credits {
+    position: fixed;
+    margin-top:13%;
+    margin-bottom: 10%;
+    left:25%;
+    width: 50%;
+  }
+
   h1,
   .topnav h1 {
     font-size: 3rem;
@@ -467,6 +475,13 @@ div.credits {
 }
 
 @media screen and (max-width: 500px) {
+  div.credits {
+    position: fixed;
+    margin-top:13%;
+    margin-bottom: 10%;
+    left:6%;
+    width: 78%;
+  }
   .title {
     display: none;
   }
