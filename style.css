@@ -138,17 +138,20 @@ html {
   overflow: hidden;
 } */
 
-html* {
-  box-sizing: border-box;
-}
-
-footer,
-div.footer {
+footer{
   position: fixed;
+  display:flex;
+  flex-wrap: wrap;
   bottom: 2%;
   height:10%;
   width: 100%;
 }
+
+nav{
+  display: block;
+  width: 40%;
+}
+
 
 content-wrap {
   padding-bottom: 50px; /* Footer height */
@@ -294,11 +297,7 @@ footer ul {
   align-content: right;
   bottom: 2%;
   right:1%;
-  width: 29%;
-}
-
-nav.home {
-  width: 60%;
+  width: 29vw;
 }
 
 .top-right {
@@ -321,10 +320,10 @@ div.topnav,div.hometopnav {
   color: black;
 }
 
-.hometitle{
+/* .hometitle{
   font-size:3.1rem;
   letter-spacing:1.7px;
-}
+} */
 
 
 .hamburger {
@@ -350,10 +349,18 @@ a:hover {
   font-style: italic;
 }
 
+nav ul{
+  width: 100%
+}
+
+nav.home ul{
+  width: 55%;
+}
+
 nav ul ul {
   position: fixed;
   bottom:10px;
-  display: absolute;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -440,6 +447,10 @@ div.credits {
     width: 50%;
   }
 
+  .home {
+    width: 50vw;
+  }
+
   h1,
   .topnav h1 {
     font-size: 3rem;
@@ -465,8 +476,12 @@ div.credits {
     width: 80%;
   }
 
-  nav {
-    width: 40%;
+  nav ul{
+    width: 100%;
+  }
+
+  nav.home ul{
+    width: 55%;
   }
 
   nav a {
@@ -505,6 +520,10 @@ div.credits {
 
   div.hamburger:hover > div.mobilemenu {
     display: block;
+  }
+
+  .hometitle{
+    display:none;
   }
 
   p {
